@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <main class="login-main bg-info-subtle vh-100 overflow-auto">
+        <div class="w-50 m-auto text-center shadow-lg rounded-4 mt-5 p-4 text-primary-emphasis">
+            <h1 class="mb-5">Smart Login System</h1>
+            <input oninput="validation(this)" id="nameUser" type="text" class="border-primary bg-info-subtle form-control mb-2" placeholder="Enter Your Name">
+            <input oninput="validation(this)" id="emailUser" type="email" class="border-primary bg-info-subtle form-control mb-2" placeholder="Enter Your Email">
+            <input oninput="validation(this)" id="userPass" type="password" class="border-primary bg-info-subtle form-control mb-4" placeholder="Enter Your password">
+            <p class="text-danger text-center fs-4 d-none">All inputs is required</p>
+            <p class="text-danger text-center fs-4 d-none" id="emailEx">email already exists</p>
+            <p class="text-success text-center fs-4 d-none" id="Success">Success</p>
+            <button onclick="addNewUser()" class="form-control btn btn-outline-primary mb-4">Sign Up</button>
+            <p>Don’t have an account? <a class="text-primary-emphasis text-decoration-none" href="login.html">SignIn</a></p>
+        </div>
+    </main>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
